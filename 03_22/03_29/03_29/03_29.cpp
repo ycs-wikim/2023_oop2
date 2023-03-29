@@ -8,9 +8,44 @@
 
 using namespace std;
 
+// 새로운 자료형을 선언하는 방법
+// typedef를 이용해서 선언 : 형식 --> typedef A B --> A 자료형을 B 형식으로 사용
+typedef int INT;    // 마지막에 ;를 반드시 붙여야 함.
+typedef char CHAR;
+typedef int i;
+typedef
+// A 시작
+struct data_for_position_and_information
+{
+    int x;
+    int y;
+    int z;
+    char p;
+    char zp[10];
+}
+// A 종료
+ASDF;   // B
+
+struct data_for_position_and_information g_x;
+
 // 문자열 : 문자들의 배열을 줄여서 문자열
 int main()
 {
+    i i = 9;            // 컴파일러는 자료형과 변수를 엄격하게 구분한다.
+    printf("%d\n", i);  // i를 자료형이 아니라 변수로 사용한다.
+
+    {
+        
+        printf("여기는 중괄호 안입니다. 0~~~\n");
+        printf("여기는 중괄호 안입니다. 1~~~\n");
+        printf("여기는 중괄호 안입니다. 2~~~\n");
+        int k = 9;
+    }
+    k++;
+    printf("%d\n", k);
+
+    INT a;
+    ASDF k;
     char str[8];        // 비어있고, 쓰레기 값이 들어있는 문자 배열 선언
     char str1[8] = "asdf";  // "asdf" + NULL 문자까지 포함된 문자 배열 선언
     char str2[8] = "";      // 비어있는 문자 배열 선언 : 좋은 방법 X
@@ -18,6 +53,7 @@ int main()
     char str4[8] = { 65, }; // A0000000 으로 문자열이 초기화
     char str5[8] = { };
     char str6[8] = { 0 };
+    char str7[] = "asdf";   // 초기화 문자열 개수 + NULL을 포함한 배열이 생성
 
     // 문자열의 사용
     // 1. str6에 "asdf" 문자열 입력
