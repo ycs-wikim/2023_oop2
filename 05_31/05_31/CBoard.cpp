@@ -46,6 +46,6 @@ const char* CBoard::strSRP(int what)
 		break;
 	}
 
-	return nullptr;
+	//return nullptr;
 }
 
